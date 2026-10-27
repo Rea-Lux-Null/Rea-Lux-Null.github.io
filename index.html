@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rea Lux — student">
+<meta name="theme-color" content="#0b0b0d">
+<title>Rea Lux — The Real Light</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="flow" aria-hidden="true"></canvas>
+
+<header><nav class="wrap" aria-label="Main navigation">
+  <a class="brand" href="#home">Rea <span>Lux</span></a>
+  <div class="nav-right">
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a><a href="#mess">Mess</a><a href="#likes">Likes</a><a href="#projects">Things</a><a href="#currently">Currently</a><a href="#contact">Contact</a>
+    </div>
+    <button class="icon-button" id="themeBtn" type="button" aria-label="Switch to light mode" title="Switch theme">☼</button>
+    <button class="icon-button" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+</nav></header>
+
+<main id="home">
+  <!-- HERO -->
+  <div class="wrap hero">
+    <div class="hero-kicker"><span>Personal page / 001</span><span>The real light</span></div>
+    <div class="hero-layout">
+      <div>
+        <div class="eyebrow">Student · He/Him</div>
+        <h1><span class="rea">Rea</span> <span class="lux">Lux</span><span class="period">.</span></h1>
+        <p class="hero-copy">Just a student who's always interested in something, but approximately <strong>90% lazy</strong>. Sometimes I code. Sometimes I troubleshoot. Sometimes I make things worse.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Things I've done <span>↘</span></a>
+          <a class="button" href="#mess">Things I've messed up <span>↘</span></a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <div>
+          <div class="hero-card-title">QUICK STATUS / REALITY CHECK</div>
+          <div class="hero-card-mark">Still<br>here<span>.</span></div>
+        </div>
+        <div>
+          <div class="card-rule"></div>
+          <div class="meta-row"><span>Current build</span><span>Work in progress</span></div>
+          <div class="meta-row" style="margin-top:10px"><span>Success strategy</span><span>Trial and error</span></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about"><div class="wrap">
+    <div class="section-heading reveal"><span class="section-index">01</span><h2>A little about me.</h2><p>Not a professional bio—just a little context about the person behind this page.</p></div>
+    <div class="about-layout reveal">
+      <div class="about-note"><strong>Just a person who's interested in things, with about 90% laziness.</strong><small>HUMAN.EXE — STILL LEARNING</small></div>
+      <div class="about-copy">
+        <p>Hey! I'm Rea Lux, but you can call me Rea. I'm just a student.</p>
+        <p>I'm still figuring out what I'm doing, and honestly, I'm pretty confused. <strong>I keep saying I want to be a programmer, but I haven't learned much yet.</strong> My laptop is on its last legs, and so far there's been more talk than action. Ah… pathetic. But I really am interested in technology, programming, problem-solving, and maybe story design. I just haven't figured out where to start.</p>
+        <p>I'm still learning and experimenting. This page is a record of my interests and projects, not a claim that I've mastered everything listed here.</p>
+        <div class="chips"><span class="chip">Web development</span><span class="chip">HTML / CSS / JS</span><span class="chip">Troubleshooting</span><span class="chip">Worldbuilding</span><span class="chip">Story design</span><span class="chip">Watching stuff</span><span class="chip">Reading stuff</span><span class="chip">Doing homework</span><span class="chip">Being lazy</span></div>
+      </div>
+    </div>
+
+    <div class="name-box reveal">
+      <div class="name-part rea"><h3>Rea</h3><p>Real · Flowing</p></div>
+      <div class="name-part lux"><h3>Lux</h3><p>Light</p></div>
+      <button class="meaning" id="meaning" type="button" aria-label="Toggle meaning of Rea Lux">
+        <small>Rea Lux means (tap)</small>
+        <span class="big" id="meaningText">“The real light”</span>
+      </button>
+    </div>
+
+    <div class="meter reveal" id="meter">
+      <div class="meter-top"><span>LAZINESS LEVEL</span><b id="pct">0%</b></div>
+      <div class="bar"><span id="barFill"></span></div>
+      <div class="meter-legend"><span>90% laziness</span><span>10% something else</span></div>
+    </div>
+  </div></section>
+
+  <!-- MESS -->
+  <section id="mess"><div class="wrap">
+    <div class="section-heading reveal"><span class="section-index">02</span><h2>Things I mess up.</h2><p>Some are technical issues. Others are probably beyond technical support. Tap a card for the damage report.</p></div>
+    <div class="mess-grid">
+      <article class="mess-card reveal" tabindex="0"><div class="card-index">01 / HARDWARE</div><h3>My devices</h3><p>My SSD is basically dead, and I smashed my tablet, too.</p><div class="extra">&gt; status: rest in pieces<br>&gt; lesson: back up your files</div></article>
+      <article class="mess-card reveal" tabindex="0"><div class="card-index">02 / TOOLS</div><h3>My tools</h3><p>Yep, Indonesians call that <i>tolol</i>.</p><div class="extra">&gt; status: self-aware<br>&gt; fix: pending</div></article>
+      <article class="mess-card reveal" tabindex="0"><div class="card-index">03 / FAMILY TECH</div><h3>Other people's tech</h3><p>I broke my family's router.</p><div class="extra">&gt; status: no wifi, no peace<br>&gt; witnesses: everyone</div></article>
+      <article class="mess-card reveal" tabindex="0"><div class="card-index">04 / PERSONAL</div><h3>My life</h3><p>Problems.</p><div class="extra">&gt; status: ongoing<br>&gt; loading…</div></article>
+      <article class="mess-card reveal" tabindex="0"><div class="card-index">05 / SIDE EFFECTS</div><h3>Other people's lives</h3><p>And sometimes I bring my problems into other people's lives.</p><div class="extra">&gt; status: working on it<br>&gt; goal: to be a lighter presence</div></article>
+    </div>
+    <div class="counter-row reveal">
+      <button class="button" id="messBtn" type="button">I messed up something again</button>
+      <span>today's count: <b id="messCount">0</b></span>
+    </div>
+  </div></section>
+
+  <!-- THINGS -->
+  <section id="things"><div class="wrap">
+    <div class="section-heading reveal"><span class="section-index">03</span><h2>Things I've experimented with.</h2><p>Tools and technologies I've tried, used, or am still figuring out.</p></div>
+    <div class="chips reveal"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">C++</span><span class="chip">Spicetify</span><span class="chip">Git</span><span class="chip">GitHub</span></div>
+  </div></section>
+
+  <!-- LIKES -->
+  <section id="likes"><div class="wrap">
+    <div class="section-heading reveal"><span class="section-index">04</span><h2>Things I like.</h2><p>This isn't a recommendation list—just a few things that have stuck with me.</p></div>
+    <div class="about-layout reveal">
+      <div class="about-note"><strong>Magic worlds.<br>Romance comedy.<br>Equal parts.</strong><small>TASTE.EXE — LOADED</small></div>
+      <div class="about-copy">
+        <p>I'm not much of a novel reader. I usually find stories through <strong>anime, manga, manhwa, and music</strong>.</p>
+        <p>I'm drawn to worlds with clear rules, heroes who don't fit those rules and find another way forward, and romance that's allowed to be funny. I like natural comedy, plots that keep moving, and endings that earn their sweetness.</p>
+        <p>I'm also a rom-com fan with a lot of opinions and very little firsthand experience. I'm working on it.</p>
+        <div class="chips"><span class="chip">Magic worlds</span><span class="chip">Romance comedy</span><span class="chip">Underdogs</span><span class="chip">Systems &amp; rules</span></div>
+      </div>
+    </div>
+
+    <div class="sub-label reveal"><b>01</b> / Reading &amp; watching</div>
+    <div class="shelf reveal">
+      <div class="item"><h4>Takopi's Original Sin</h4><p>Cute design, dark story. The dark part was darker than I expected.</p></div>
+      <div class="item"><h4>Maybe Meant to Be</h4><p>Funny, surprisingly deep, and a very sweet ending.</p></div>
+      <div class="item"><h4>Smoking Behind the Supermarket With You</h4><p>The latest one I watched—I finished all 12 episodes. The comedy feels natural, and the story offers a realistic look at working life.</p></div>
+      <div class="item"><h4>Solo Leveling</h4><p>I read the manhwa because of a friend. I skipped the anime because I was afraid it might disappoint me.</p></div>
+      <div class="item"><h4>Solo Leveling: Ragnarok</h4><p>Currently on hiatus. I'm waiting.</p></div>
+      <div class="item"><h4>The Extra's Academy Survival Guide</h4><p>Another story a friend got me into.</p></div>
+      <div class="item"><h4>Mashle</h4><p>A magic world and a hero with no magic. The comedy is genuinely fun.</p></div>
+      <div class="item"><h4>Ranking of Kings</h4><p>A certain father made me very, very angry.</p></div>
+      <div class="item"><h4>Dr. Stone</h4><p>I started watching it because the concept was different.</p></div>
+      <div class="item"><h4>Naruto</h4><p>Everyone's seen it. I'm part of everyone.</p></div>
+    </div>
+
+    <div class="sub-label reveal"><b>02</b> / Started but didn't finish</div>
+    <div class="shelf reveal">
+      <div class="item dim"><h4>Nichijou</h4><p>Tried a little.</p></div>
+      <div class="item dim"><h4>My Deer Friend Nokotan</h4><p>Stopped halfway.</p></div>
+    </div>
+
+    <div class="sub-label reveal"><b>03</b> / Games &amp; music</div>
+    <div class="current-layout reveal">
+      <div class="current-copy">
+        <p>I listen to a lot of <strong>Japanese music</strong>. I don't speak Japanese, so I can only sing in romaji. Emphasis on <em>sing</em>, not on <em>well</em>.</p>
+        <p>I mostly play mobile games, and I tend to stick with them for a long time. I started playing two of them on launch day and never really stopped.</p>
+      </div>
+      <div class="status-card">
+        <div class="status-head"><span>GAME LOG</span><span>STILL PLAYING</span></div>
+        <div class="status-row"><span>Mobile Legends</span><span>I have it, but don't play</span></div>
+        <div class="status-row"><span>Honor of Kings</span><span>Playing since launch</span></div>
+        <div class="status-row"><span>Call of Duty: Mobile</span><span>Rarely; it eats storage</span></div>
+        <div class="status-row"><span>Random games</span><span>Who knows?</span></div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- IDEAS -->
+  <section id="ideas"><div class="wrap">
+    <div class="section-heading reveal"><span class="section-index">05</span><h2>Ideas I'm proud of.</h2><p>Small systems from my stories. Tap a card to get the short version.</p></div>
+    <div class="mess-grid">
+      <article class="mess-card reveal" tabindex="0"><div class="card-index">IDEA 01 / MAGIC SYSTEM</div><h3>Three Pillars</h3><p>Your magic is only as strong as your weakest pillar: physical ability, mental strength, or knowledge.</p><div class="extra">&gt; PMK = min(P, M, K)<br>&gt; you can't get strong by training only your body</div></article>
+      <article class="mess-card reveal" tabindex="0"><div class="card-index">IDEA 02 / MAGIC SYSTEM</div><h3>Reality / Imaginary / Complexity</h3><p>1 + 1 simplifies, but 1 + i doesn't. People in different states of reality can't touch each other.</p><div class="extra">&gt; Complexity = both states in one existence<br>&gt; inspired by real and imaginary numbers</div></article>
+      <article class="mess-card reveal" tabindex="0"><div class="card-index">IDEA 03 / TIME</div><h3>Timeroots</h3><p>Timelines grow like roots: they can split, then merge again when conditions match.</p><div class="extra">&gt; cut a root and it rots into glitter<br>&gt; not a tree, because trees never rejoin</div></article>
+    </div>
+  </div></section>
+
+  <!-- PROJECTS -->
+  <section id="projects"><div class="wrap">
+    <div class="section-heading reveal"><span class="section-index">06</span><h2>Things I've actually done.</h2><p>Some are technical experiments. One has grown into an entire fictional universe.</p></div>
+    <div class="project-grid">
+      <article class="project featured reveal">
+        <div>
+          <div class="card-index">PROJECT 01 / ORIGINAL STORY</div>
+          <h3>EXCEED/MEMENTO</h3>
+          <p>An original fantasy saga about humans who become gods—and learn that divine power doesn't erase human flaws. Across fifteen seasons, wars, reincarnation, fractured timelines, and inherited trauma build toward a question: can beings powerful enough to shape worlds still learn to be human, take responsibility, and forgive?</p>
+          <div class="chips"><span class="chip">Fantasy</span><span class="chip">Long-form story</span><span class="chip">Worldbuilding</span></div>
+          <a class="project-link" href="exceed-memento-wiki.html">OPEN THE WIKI →</a>
+        </div>
+        <aside class="project-stat"><strong>15</strong><span>SEASONS · ONE VERY LONG JOURNEY</span></aside>
+      </article>
+      <article class="project reveal">
+        <div class="card-index">PROJECT 02 / WEB</div>
+        <h3>This website!</h3>
+        <p>I made this with help from Claude and ChatGPT. Awokawokawok.</p>
+        <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+        <a class="project-link" href="https://realux.carrd.co/" target="_blank" rel="noopener noreferrer">VISIT MY CARRD ↗</a>
+      </article>
+      <article class="project reveal">
+        <div class="card-index">PROJECT 03 / TROUBLESHOOTING</div>
+        <h3>Tech experiments</h3>
+        <p>Testing settings, tweaking tools, and changing one variable at a time. Occasionally, the fourth guess is the one that works.</p>
+        <div class="chips"><span class="chip">Debugging</span><span class="chip">Configuration</span></div>
+      </article>
+      <article class="project reveal">
+        <div class="card-index">PROJECT 04 / SHORT STORY</div>
+        <h3>Timeroots</h3>
+        <p>A short story built around the ideas of Reality, Imaginary, and Complexity. It features a magicless weaponsmith, a tsundere half-dragon, and a timeline that turns into glitter. Co-written with AI.</p>
+        <div class="chips"><span class="chip">Short story</span><span class="chip">Romcom</span><span class="chip">Fantasy</span></div>
+      </article>
+    </div>
+  </div></section>
+
+  <!-- CURRENTLY -->
+  <section id="currently"><div class="wrap">
+    <div class="section-heading reveal"><span class="section-index">07</span><h2>Currently.</h2><p>A snapshot, not a suspiciously optimized productivity dashboard.</p></div>
+    <div class="current-layout reveal">
+      <div class="current-copy">
+        <p>I'm learning more about <strong>web development</strong> and building a stronger foundation in programming.</p>
+        <p>Outside code, I'm still developing EXCEED/MEMENTO—working on how the characters, themes, and history connect instead of merely making the lore longer.</p>
+        <p>There is no perfectly linear roadmap here. Curiosity tends to take the scenic route.</p>
+      </div>
+      <div class="status-card">
+        <div class="status-head"><span>STATUS</span><span>PROGRESS</span></div>
+        <div class="status-row"><span>PLAYING</span><span>Real life. I want to live, though.</span></div>
+        <div class="status-row"><span>HTML / CSS / JS</span><span>Learning it, even if it's boring</span></div>
+        <div class="status-row"><span>Story development</span><span>Ongoing</span></div>
+        <div class="status-row"><span>Anime &amp; manga</span><span>Just finished a 12-episode romcom</span></div>
+        <div class="status-row"><span>SSD</span><span>Questionable</span></div>
+        <div class="status-row"><span>Sanity</span><span>Also questionable</span></div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- CONTACT -->
+  <section id="contact"><div class="wrap">
+    <div class="contact-panel reveal">
+      <div>
+        <div class="eyebrow">08 / Elsewhere online</div>
+        <h2>Find me.<br>Or don't.</h2>
+        <p>Public links only. The mystery budget is limited, but not zero.</p>
+        <div class="contact-links">
+          <a href="https://github.com/Rea-Lux-Null" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://realux.carrd.co/" target="_blank" rel="noopener noreferrer">Carrd ↗</a>
+          <a href="https://www.instagram.com/asrarea_lux" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        </div>
+      </div>
+    </div>
+  </div></section>
+</main>
+
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> Rea Lux</span><span>Made by me, with help from AI.</span></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
