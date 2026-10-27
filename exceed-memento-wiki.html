@@ -1747,9 +1747,9 @@ function pager(slugNow){
 function renderHome(){
   document.title=docTitle+" Wiki";
   var h='<div class="eyebrow">Wiki · original work</div><h1>'+esc(docTitle)+'</h1>';
-  h+='<div class="hero-wiki"><p class="lead">An original fantasy saga about humans who become gods, and who learn that divine power does not erase human flaws. All the world notes, seasons, magic system, and characters are here.</p>';
+  h+='<div class="hero-wiki"><p class="lead">An fantasy story about humans who become gods, and who learn that divine power does not erase human flaws.</p>';
   h+='<div class="stats"><div class="stat"><b>'+seasonPages.length+'</b><span>Seasons</span></div><div class="stat"><b>'+filmCount+'</b><span>Films &amp; spin-offs</span></div><div class="stat"><b>'+pages.length+'</b><span>Pages</span></div></div></div>';
-  h+='<div class="note" id="note"><span><b>Warning:</b> this wiki contains full spoilers and heavy themes (violence, loss, trauma). Recommended for those who have already followed the story, or don\'t mind being spoiled.</span><button type="button" aria-label="Close" id="noteX">×</button></div>';
+  h+='<div class="note" id="note"><span><b>Warning:</b> This wiki contains sensitive contents, including violence, loss, and trauma. This work exists only in its outline form, covering the overall storyline, character names, and other general details. The full story has not been written.</span><button type="button" aria-label="Close" id="noteX">×</button></div>';
   h+='<h2 style="margin-top:8px">Season list</h2><div class="sgrid">'+seasonPages.map(function(p){
     return '<a class="scard" href="#/'+p.slug+'"><div class="num">SEASON '+p.num+'</div><h4>'+esc(p.display)+'</h4><p>'+esc(p.sub||"")+'</p></a>';
   }).join("")+'</div>';
