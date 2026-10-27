@@ -1,1 +1,1 @@
-# Rea-Lux-Null.github.io
+# Portofolio udahlah pake AI. goblok lagi isinya
