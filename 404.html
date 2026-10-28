@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="404 — this page got lost. Rea Lux's site.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0b0b0d">
+<title>404 — Light not found | Rea Lux</title>
+<script>
+/* GitHub Pages serves this file for ANY missing URL (even /a/b/c), so assets need
+   absolute paths there. Opened straight from disk (file://, e.g. an editor preview)
+   they need relative ones. Pick the right prefix once and reuse it. */
+(function(){
+  var p=location.protocol==="file:"?"":"/";
+  window.__assets=p;
+  if(p==="")document.documentElement.className+=" nomask"; /* CSS masks are blocked on file:// */
+  document.write(
+    '<link rel="icon" type="image/png" sizes="64x64" href="'+p+'assets/favicon.png">'+
+    '<link rel="apple-touch-icon" href="'+p+'assets/apple-touch-icon.png">'+
+    '<link rel="stylesheet" href="'+p+'assets/port-style.css">'+
+    '<link rel="stylesheet" href="'+p+'assets/404-style.css">'
+  );
+})();
+</script>
+<noscript>
+<link rel="stylesheet" href="/assets/port-style.css">
+<link rel="stylesheet" href="/assets/404-style.css">
+</noscript>
+</head>
+<body>
+<canvas id="flow" aria-hidden="true" data-intensity="1"></canvas>
+
+<header><nav class="wrap" aria-label="Main navigation">
+  <a class="brand" href="/"><i class="mark" role="img" aria-label="Rea Lux emblem"></i><span class="brand-text">Rea <span>Lux</span></span></a>
+  <div class="nav-right">
+    <button class="icon-button" id="themeBtn" type="button" aria-label="Switch to light mode" title="Switch theme">☼</button>
+  </div>
+</nav></header>
+
+<main>
+  <div class="wrap e404">
+    <div class="hero-kicker"><span>Error / 404</span><span id="kickerRight">Page not found</span></div>
+
+    <div class="e404-layout">
+      <div>
+        <div class="eyebrow">Somebody took a wrong turn</div>
+        <h1 class="e404-title" aria-label="404">
+          <span class="rea">4</span><span class="lux" id="zero">0</span><span class="rea">4</span><span class="period">.</span>
+        </h1>
+        <p class="hero-copy">The light's on, but <strong>nobody's home</strong>. This page doesn't exist, was moved, or I broke it. Honestly, the odds are about even.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="/">Back to safety <span>↖</span></a>
+          <button class="button" id="blameBtn" type="button">Whose fault is this?</button>
+        </div>
+      </div>
+
+      <div class="e404-side">
+      <div class="e404-char-wrap" id="char"><div class="e404-char" role="img" aria-label="Drawing of Rea in a suit and tie, looking unbothered"></div></div>
+      <aside class="hero-card" aria-label="Error report">
+        <div>
+          <div class="hero-card-title">DAMAGE REPORT / AUTO-GENERATED</div>
+          <div class="e404-path-label">requested path</div>
+          <code class="e404-path" id="path">/…</code>
+        </div>
+        <div>
+          <div class="card-rule"></div>
+          <div class="meta-row"><span>Status</span><span>Not found</span></div>
+          <div class="meta-row"><span>Suspect</span><span id="suspect">Unknown</span></div>
+          <div class="meta-row"><span>Messes today</span><span id="messNow">0</span></div>
+        </div>
+      </aside>
+      </div>
+    </div>
+
+    <div class="e404-links">
+      <div class="sub-label"><b>01</b> / Pages that do exist</div>
+      <div class="shelf">
+        <a class="item" href="/"><h4>Home</h4><p>The about-me page. Mostly confusion, some code.</p></a>
+        <a class="item" href="/#mess"><h4>Things I mess up</h4><p>A very relevant section, given the circumstances.</p></a>
+        <a class="item" href="/#projects"><h4>Things I've done</h4><p>Projects that actually work. Allegedly.</p></a>
+        <a class="item" href="/exceed-memento-wiki.html"><h4>EXCEED/MEMENTO wiki</h4><p>Fifteen seasons of lore. Easy to get lost in, but at least it's there.</p></a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> Rea Lux</span><span>Made by me, with help from AI.</span></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var p=window.__assets===undefined?"/":window.__assets;
+  ["flow.js","404-script.js"].forEach(function(f){var s=document.createElement("script");s.async=false;s.src=p+"assets/"+f;document.body.appendChild(s)});
+})();
+</script>
+</body></html>
