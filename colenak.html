@@ -122,6 +122,26 @@
   .lightbox.open { display: flex; }
   .lightbox img { max-width: 100%; max-height: 100%; border-radius: 14px; }
 
+
+  /* About */
+  .about p { color: var(--text); margin-bottom: 12px; }
+  .about p:last-child { margin-bottom: 0; }
+  .about em { color: var(--accent); font-style: normal; font-weight: 700; }
+  .etymo { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; margin: 16px 0 4px; font-size: 20px; font-weight: 800; }
+  .etymo .part { padding: 8px 14px; border-radius: 12px; border: 1px dashed var(--accent2); color: var(--accent); }
+  .etymo .eq { color: var(--muted); }
+  .etymo .res { padding: 8px 16px; border-radius: 12px; background: linear-gradient(90deg, var(--accent2), var(--accent)); color: #1a0f05; }
+  .etymo-note { text-align: center; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  .timeline { border-left: 2px solid var(--accent2); margin: 6px 0 0 6px; padding-left: 16px; }
+  .timeline .t { margin-bottom: 14px; position: relative; }
+  .timeline .t::before { content: ""; position: absolute; left: -23px; top: 7px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+  .timeline b { color: var(--accent); }
+  details { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; background: #1f1812; margin-top: 10px; }
+  summary { cursor: pointer; font-weight: 700; }
+  details p { margin-top: 8px; color: var(--muted); font-size: 14px; }
+  .source { margin-top: 14px; font-size: 13px; color: var(--muted); }
+  .source a { color: var(--accent); }
+
   footer { text-align: center; color: var(--muted); font-size: 12px; padding: 30px 16px 50px; }
 </style>
 </head>
@@ -144,6 +164,48 @@
 </header>
 
 <main class="wrap">
+
+  <section id="about">
+    <h2>📖 Tentang Colenak</h2>
+    <div class="card about">
+      <p><em>Colenak</em> (juga dikenal sebagai <em>beuleum peuyeum</em>) adalah kudapan khas Sunda dari peuyeum atau tapai singkong yang dibakar. Cara makannya dicocolkan ke gula merah cair yang dicampur serutan kelapa.</p>
+
+      <div class="etymo" aria-label="Asal kata colenak">
+        <span class="part">di<b>coc</b>ol</span>
+        <span class="eq">+</span>
+        <span class="part">é<b>nak</b></span>
+        <span class="eq">=</span>
+        <span class="res">colenak</span>
+      </div>
+      <p class="etymo-note">Nama colenak berasal dari gabungan frasa Sunda "dicocol énak", kira-kira artinya "dicelupkan biar terasa sedap".</p>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <h2 style="font-size:17px">🕰️ Sejarah singkat</h2>
+      <div class="timeline">
+        <div class="t"><b>1930</b><br>Kudapan ini berasal dari Bandung dan diperkenalkan oleh Aki Murdi.</div>
+        <div class="t"><b>Turun-temurun</b><br>Usaha Colenak Murdi Putra di Jalan Ahmad Yani, Bandung, diwariskan sampai tiga generasi.</div>
+        <div class="t"><b>Sekarang</b><br>Selain versi tradisional, ada juga varian rasa durian dan nangka.</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <h2 style="font-size:17px">💡 Fakta menarik</h2>
+      <details>
+        <summary>Kenapa peuyeum gampang gosong?</summary>
+        <p>Kandungan gula pada tapai bikin peuyeum cepat gosong waktu dibakar. Uniknya, sebagian orang malah menganggap bagian yang gosong itu paling enak.</p>
+      </details>
+      <details>
+        <summary>Colenak di budaya Sunda</summary>
+        <p>Kepopulerannya terlihat sampai ke kesenian Sunda, misalnya kawih degung dan lagu anak-anak.</p>
+      </details>
+      <details>
+        <summary>Soal harga</summary>
+        <p>Colenak dulu tergolong murah. Pada 2013, harganya sekitar Rp5.000 per porsi.</p>
+      </details>
+      <p class="source">Sumber: <a href="https://id.wikipedia.org/wiki/Colenak" target="_blank" rel="noopener">Wikipedia Indonesia: Colenak</a></p>
+    </div>
+  </section>
 
   <section>
     <h2>🍢 Nama-nama Colenak</h2>
